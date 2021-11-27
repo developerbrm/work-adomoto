@@ -1,0 +1,42 @@
+.main {
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: end;
+    justify-content: start;
+    grid-template: 1fr/ 1fr;
+
+    .content_container {
+      line-height: 1;
+      padding: 0 2rem;
+      padding-bottom: 18vh;
+
+      .heading {
+        color: #f8c100;
+        font-size: clamp(2rem, 10vw, 4rem);
+        margin: 1rem 0;
+      }
+
+      .sub_heading {
+        color: #616160;
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+      }
+    }
+
+    .hero_bg_container {
+      z-index: -1;
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
