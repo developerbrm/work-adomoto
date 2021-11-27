@@ -37,8 +37,7 @@ header {
     align-items: center;
     color: #fff;
 
-    .logo-container{
-
+    .logo-container {
       .logo {
         font-size: 2rem;
         font-weight: bolder;
@@ -51,12 +50,11 @@ header {
       align-items: center;
       gap: 1rem;
       font-size: 1.2rem;
-      
     }
 
     &.show-bg {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.5rem 2rem;
     }
   }
 }
