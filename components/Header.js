@@ -10,7 +10,6 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const header = document?.querySelector("header");
     const nav = document?.querySelector("header nav");
     window.onscroll = () => {
       const { scrollY } = window;
@@ -18,6 +17,10 @@ const Header = () => {
       if (scrollY > 100) nav.classList.add("show-bg");
       else nav.classList.remove("show-bg");
     };
+  }, []);
+
+  React.useEffect(() => {
+    const header = document?.querySelector("header");
 
     header.classList.add("hide-header");
   }, []);
@@ -26,7 +29,20 @@ const Header = () => {
     <>
       <Head>
         <title>Adomoto</title>
-        <meta name="description" content="This is Adomoto" />
+        <meta
+          name="description"
+          content="We specialize in placing your business in the media, yielding
+                impactful communication results, positioning you as the market
+                leader, driving increased traffic to your website, improving
+                your search rankings, promoting your products and services, and
+                improving conversions of customers for your brand. We specialize
+                in graphic design, development of high-quality websites,
+                customized web applications, Amazing graphics video intro, and
+                after effect logo at a reasonable cost, which helps you create
+                an outstanding web presence that compliments your company&#39;s
+                identity."
+        />
+        {/* <meta name="description" content="This is Adomoto" /> */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 

@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -28,6 +28,7 @@ a {
 }
 
 .ham-menu-container {
+  display: none;
   position: fixed;
   right: 2rem;
   top: 2rem;
@@ -47,6 +48,10 @@ a {
     &:focus {
       filter: invert(1);
     }
+  }
+
+  @media (max-width: 750px) {
+    display: block;
   }
 }
 
