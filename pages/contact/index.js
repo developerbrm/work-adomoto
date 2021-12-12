@@ -1,32 +1,81 @@
+import { Send } from "@mui/icons-material";
 import { Button, Container, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Contact from "../../components/Contact";
 import Header from "../../components/Header";
+import swal from "sweetalert";
 
-const index = () => {
-  // fetch("https://formsubmit.co/ajax/your@email.com", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     Accept: "application/json",
-  //   },
-  //   body: JSON.stringify({
-  //     name: "FormSubmit",
-  //     message: "I'm from Devro LABS",
-  //   }),
-  // })
-  //   .then((response) => response.json())
-  //   .then((data) => console.log(data))
-  //   .catch((error) => console.log(error));
+const ContactPage = () => {
+  // Rohanjindal666@gmail.com
+
+  const initialState = {
+    name: "",
+    email: "",
+    phone: "",
+    form: "Adomoto Lead Form",
+    message: "",
+  };
+
+  const [isSendingForm, setIsSendingForm] = useState(false);
+  const [formData, setFormData] = useState(initialState);
+
+  const handleOnChange = (e) => {
+    const { value, name } = e.target;
+
+    console.log({ name });
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    setIsSendingForm(true);
+
+    e.preventDefault();
+    fetch("https://formsubmit.co/ajax/Rohanjindal666@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        swal({
+          title: "Success",
+          text: data.message,
+          icon: "success",
+        });
+
+        for (let key in formData) {
+          setFormData((prevData) => ({ ...prevData, [key]: "" }));
+        }
+      })
+      .catch((error) => {
+        swal({
+          title: "Error",
+          text: error.message,
+          icon: "error",
+        });
+      })
+      .finally(() => {
+        setIsSendingForm(false);
+      });
+
+    console.log({ formData });
+  };
 
   return (
     <>
       <Header />
 
-      <main>
+      <main style={{ background: "#ddd" }}>
         <form
-          action="https://formsubmit.co/developerbrm@gmail.com"
-          method="POST"
+          id="Adomoto-lead-form"
+          name="Adomoto-lead-form"
+          onSubmit={handleSubmit}
         >
           <Container
             maxWidth="800px"
@@ -45,6 +94,9 @@ const index = () => {
             </Typography>
 
             <TextField
+              sx={{ mt: ".5rem" }}
+              onChange={handleOnChange}
+              value={formData["name"]}
               required
               name="name"
               label="Full Name"
@@ -52,6 +104,9 @@ const index = () => {
               fullWidth
             />
             <TextField
+              sx={{ mt: ".5rem" }}
+              onChange={handleOnChange}
+              value={formData["email"]}
               required
               name="email"
               label="Email"
@@ -60,6 +115,9 @@ const index = () => {
               fullWidth
             />
             <TextField
+              sx={{ mt: ".5rem" }}
+              onChange={handleOnChange}
+              value={formData["phone"]}
               required
               name="phone"
               label="Phone"
@@ -69,6 +127,9 @@ const index = () => {
             />
 
             <TextField
+              sx={{ mt: ".5rem" }}
+              onChange={handleOnChange}
+              value={formData["message"]}
               required
               multiline
               name="message"
@@ -78,15 +139,22 @@ const index = () => {
               fullWidth
             />
 
-            <Button variant="contained" type="submit" color="success">
+            <Button
+              variant="contained"
+              type="submit"
+              color="success"
+              disabled={isSendingForm}
+              startIcon={<Send />}
+            >
               Send Message
             </Button>
           </Container>
         </form>
       </main>
-      {/* <Contact /> */}
+
+      <Contact />
     </>
   );
 };
 
-export default index;
+export default ContactPage;

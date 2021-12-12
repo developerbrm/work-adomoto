@@ -10,11 +10,20 @@ const Contact = () => {
 
       <div className={styles.contact_details_container}>
         <h4>Yash Kumar (Co-Founder):</h4>
-        <p>yash@adomoto.com | +91 9999705223</p>
+        <p>
+          <a href="mailto:yash@adomoto.com">yash@adomoto.com</a> |{" "}
+          <a href="tel:+919999705223">+91 9999705223</a>
+        </p>
         <h4>Kriti Pal Yadav (Co-Founder):</h4>
-        <p>kriti@adomoto.com | +91 8883877774</p>
+        <p>
+          <a href="mailto:kriti@adomoto.com">kriti@adomoto.com</a> |{" "}
+          <a href="tel:+918883877774">+91 8883877774</a>
+        </p>
         <h4>HR Enquiry:</h4>
-        <p>careers@adomoto.com | 9750003072</p>
+        <p>
+          <a href="mailto:careers@adomoto.com">careers@adomoto.com</a> |{" "}
+          <a href="tel:+919750003072">+91 9750003072</a>
+        </p>
       </div>
 
       <br />
@@ -26,8 +35,8 @@ const Contact = () => {
           background: "#111",
           ":hover": {
             background: "#222",
-            color: "#ffd800"
-          }
+            color: "#ffd800",
+          },
         }}
       >
         <Link href="/contact">
