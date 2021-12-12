@@ -88,11 +88,8 @@ const Header = () => {
             <Link href="/about">
               <a className="main-link">About</a>
             </Link>
-            <Link href="/service">
-              <a className="main-link">Service</a>
-            </Link>
-            <Link href="/newRoom">
-              <a className="main-link">New Room</a>
+            <Link href="/our-team">
+              <a className="main-link">Our Team</a>
             </Link>
             <Link href="/contact">
               <a className="main-link">Contact Us</a>

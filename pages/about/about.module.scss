@@ -1,0 +1,24 @@
+.about {
+  .grid_container {
+    display: grid;
+    // justify-content: space-between;
+    // align-items: center;
+    grid-template: auto / 1fr 1fr;
+    gap: 2rem;
+
+    .grid_content {
+      grid-row: 2/-1;
+      grid-column: 1/-1;
+    }
+
+
+    @media (max-width: 800px) {
+      grid-template: unset;
+
+      .grid_content {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
+}

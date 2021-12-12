@@ -1,0 +1,30 @@
+.our_team {
+  .persons_grid_container {
+    padding: 2rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: auto / repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 2rem;
+    background-color: #000;
+
+    .person_item {
+      justify-self: center;
+      text-align: center;
+
+      h4 {
+        color: #ffd800;
+        font-size: 2rem;
+        max-width: 9ch;
+        line-height: 1.1;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #fff;
+        font-style: italic;
+      }
+    }
+  }
+}

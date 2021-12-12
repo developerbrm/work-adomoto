@@ -56,20 +56,23 @@ a {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 999;
   width: 100%;
+  background-color: #000;
 
   nav {
     transition: 0.3s ease;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
 
     .logo-container {
+      color: #fff;
+
       .logo {
         font-size: 2rem;
         font-weight: bolder;
@@ -85,17 +88,19 @@ header {
     }
 
     &.show-bg {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 0.5rem 2rem;
+      color: #fff !important;
+      pointer-events: all !important;
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 0.5rem 2rem !important;
     }
   }
 
   // mobile rules
-
   @media (max-width: 750px) {
     background: hsla(0, 0%, 6.7%, 0.95);
     transition: 0.3s ease;
     inset: 0;
+    position: fixed;
 
     nav {
       display: grid;
@@ -121,5 +126,95 @@ header {
     &.hide-header {
       transform: translate(-0%, -100%);
     }
+  }
+}
+
+.page-home {
+  header {
+    position: fixed;
+    background-color: transparent;
+
+    nav {
+      padding: 2rem;
+      color: #ffd800;
+      pointer-events: none;
+    }
+  }
+}
+
+.content-with-heading-container {
+  background-color: #000;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: clamp(1rem, 5vw, 3rem);
+  line-height: 1.9;
+
+  .content-with-heading-item {
+    margin-top: 2rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .heading {
+    color: #ffd800;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0;
+    // margin-bottom: 1rem;
+  }
+
+  .content {
+    margin: 0;
+    // font-weight: 500;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.heading-color {
+  color: #ffd800;
+}
+
+.heading-with-icon {
+  .heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    .icon {
+      flex: 1;
+      display: block;
+    }
+  }
+
+  .icon {
+    // max-width: 1rem;
+    // display: inline;
+  }
+}
+
+//home gloabal rules
+
+.home-content-with-heading-container {
+  .content-with-heading-item {
+    &:nth-of-type(3n + 2) {
+      text-align: right;
+    }
+  }
+}
+
+// 404 page
+.coming-soon-page {
+  height: 70vh;
+  position: relative;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+
+  h1 {
+    font-size: 3rem;
   }
 }
