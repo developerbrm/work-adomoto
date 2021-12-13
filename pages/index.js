@@ -27,7 +27,14 @@ export default function Home() {
             ].map(({ path = "", title = "" }, index) => (
               <Link key={uniqid()} href={path}>
                 <a className={styles.shaped_item}>
-                  <span className={styles.title}>{title}</span>
+                  <span
+                    data-animname="fade-in-up"
+                    data-onetime="true"
+                    data-delay={`${index * 0.2}`}
+                    className={styles.title}
+                  >
+                    {title}
+                  </span>
                 </a>
               </Link>
             ))}
@@ -37,7 +44,12 @@ export default function Home() {
         <section className="content-with-heading-container home-content-with-heading-container">
           <article className="content-with-heading-item">
             <div className="heading-with-icon">
-              <h2 className="heading">
+              <h2
+                className="heading"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.19`}
+              >
                 IDEA
                 <Image
                   width="50"
@@ -50,7 +62,12 @@ export default function Home() {
               </h2>
             </div>
 
-            <p className="content">
+            <p
+              className="content"
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.3`}
+            >
               We dig deep to reveal the distinctive qualities of our clients and
               then approach the task in hand. We look at things through the
               perspective of your customers and learn to speak their language
@@ -63,7 +80,12 @@ export default function Home() {
 
           <article className="content-with-heading-item">
             <div className="heading-with-icon">
-              <h2 className="heading">
+              <h2
+                className="heading"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.19`}
+              >
                 <Image
                   width="50"
                   height="50"
@@ -76,7 +98,12 @@ export default function Home() {
               </h2>
             </div>
 
-            <p className="content">
+            <p
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.3`}
+              className="content"
+            >
               Brands aren&#39;t just standalone entities that exist in our
               heads, they&#39;re as much human as we are and we understand this.
               Through our need for flux, dynamism and innovation, we explore the
@@ -90,7 +117,12 @@ export default function Home() {
 
           <article className="content-with-heading-item">
             <div className="heading-with-icon">
-              <h2 className="heading">
+              <h2
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.19`}
+                className="heading"
+              >
                 EXECUTION
                 <Image
                   width="50"
@@ -102,7 +134,12 @@ export default function Home() {
                 />
               </h2>
             </div>
-            <p className="content">
+            <p
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.3`}
+              className="content"
+            >
               Our need for innovative brand building does not indicate that our
               focus on ensuring your business goals are met is any less. No
               business can exist without concrete results of any brand building

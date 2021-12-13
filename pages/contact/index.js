@@ -94,6 +94,9 @@ const ContactPage = () => {
             </Typography>
 
             <TextField
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.1`}
               sx={{ mt: ".5rem" }}
               onChange={handleOnChange}
               value={formData["name"]}
@@ -104,6 +107,9 @@ const ContactPage = () => {
               fullWidth
             />
             <TextField
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.15`}
               sx={{ mt: ".5rem" }}
               onChange={handleOnChange}
               value={formData["email"]}
@@ -115,6 +121,9 @@ const ContactPage = () => {
               fullWidth
             />
             <TextField
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.2`}
               sx={{ mt: ".5rem" }}
               onChange={handleOnChange}
               value={formData["phone"]}
@@ -127,6 +136,9 @@ const ContactPage = () => {
             />
 
             <TextField
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.25`}
               sx={{ mt: ".5rem" }}
               onChange={handleOnChange}
               value={formData["message"]}
@@ -140,6 +152,9 @@ const ContactPage = () => {
             />
 
             <Button
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.4`}
               variant="contained"
               type="submit"
               color="success"

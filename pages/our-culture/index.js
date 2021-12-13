@@ -14,9 +14,21 @@ const index = () => {
         <div className="content-with-heading-container">
           <div className={styles.grid_container}>
             <div className="content-with-heading-item">
-              <h2 className="heading">OUR CULTURE</h2>
+              <h2
+                className="heading"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.1`}
+              >
+                OUR CULTURE
+              </h2>
 
-              <p className="content">
+              <p
+                className="content"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.4`}
+              >
                 &#34;If you&#39;re lucky enough to have people working for you,
                 then it is your moral obligation to make sure they look forward
                 to coming to office in the morning&#34;
@@ -41,7 +53,12 @@ const index = () => {
                 We are not just another agency, we are Adomoto.
               </p>
             </div>
-            <div className={styles.grid_image}>
+            <div
+              // data-animname="fade-in-up"
+              // data-onetime="true"
+              // data-delay={`1`}
+              className={styles.grid_image}
+            >
               <Image
                 alt="culture"
                 src={culture}

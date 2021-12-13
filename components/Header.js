@@ -75,7 +75,12 @@ const Header = () => {
         <nav>
           <div className="logo-container">
             <Link href="/">
-              <a className="logo">
+              <a
+                className="logo"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`0`}
+              >
                 <div>ADO</div>
                 <div>MOTO</div>
               </a>
@@ -83,16 +88,44 @@ const Header = () => {
           </div>
           <div className="links-container">
             <Link href="/">
-              <a className="main-link">Home</a>
+              <a
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.1`}
+                className="main-link"
+              >
+                Home
+              </a>
             </Link>
             <Link href="/about">
-              <a className="main-link">About</a>
+              <a
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.2`}
+                className="main-link"
+              >
+                About
+              </a>
             </Link>
             <Link href="/our-team">
-              <a className="main-link">Our Team</a>
+              <a
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.3`}
+                className="main-link"
+              >
+                Our Team
+              </a>
             </Link>
             <Link href="/contact">
-              <a className="main-link">Contact Us</a>
+              <a
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.4`}
+                className="main-link"
+              >
+                Contact Us
+              </a>
             </Link>
           </div>
           {/* <div className="logins-container"></div> */}

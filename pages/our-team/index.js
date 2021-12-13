@@ -13,9 +13,21 @@ const index = () => {
       <main className={styles.our_team}>
         <div className="content-with-heading-container">
           <div className="content-with-heading-item">
-            <h2 className="heading">OUR TEAM</h2>
+            <h2
+              className="heading"
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.1`}
+            >
+              OUR TEAM
+            </h2>
 
-            <p className="content">
+            <div
+              data-animname="fade-in-up"
+              data-onetime="true"
+              data-delay={`.2`}
+              className="content"
+            >
               At Adomoto, we have become specialists at turning new ideas into
               viable products for our client’s organizations. Some of the more
               rewarding projects we have had the honour to be involved in,
@@ -32,10 +44,15 @@ const index = () => {
               the drawing board at any point in the process.
               <br />
               <br />
-              <div className="heading-color">
+              <p
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.25`}
+                className="heading-color"
+              >
                 Meet our team who make this divrocess come to life.
-              </div>
-            </p>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -45,10 +62,22 @@ const index = () => {
             { name: "KIRTI PAL YADAV", post: "Co Founder " },
             { name: "HARSH KUMAR", post: "Co Founder " },
             { name: "MAYANK SOMANI", post: "Co Founder " },
-          ].map(({ name, post }) => (
+          ].map(({ name, post }, index) => (
             <div key={name} className={styles.person_item}>
-              <h4>{name}</h4>
-              <p>{post}</p>
+              <h4
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`${index * 0.1}`}
+              >
+                {name}
+              </h4>
+              <p
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`${index * 0.15}`}
+              >
+                {post}
+              </p>
             </div>
           ))}
         </div>

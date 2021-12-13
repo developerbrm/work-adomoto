@@ -35,8 +35,9 @@ a {
   z-index: 999999;
 
   .ham-icon {
-    background-color: transparent;
-    padding: 0;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 0.2em;
     margin: 0;
     border: none;
     outline: none;
@@ -45,7 +46,8 @@ a {
     color: #fff;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       filter: invert(1);
     }
   }
@@ -90,14 +92,14 @@ header {
     &.show-bg {
       color: #fff !important;
       pointer-events: all !important;
-      background-color: rgba(0, 0, 0, 0.95);
+      background-color: rgba(0, 0, 0, 0.95) !important;
       padding: 0.5rem 2rem !important;
     }
   }
 
   // mobile rules
   @media (max-width: 750px) {
-    background: hsla(0, 0%, 6.7%, 0.95);
+    background: hsla(0, 0%, 6.7%, 0.95) !important;
     transition: 0.3s ease;
     inset: 0;
     position: fixed;
@@ -136,7 +138,7 @@ header {
 
     nav {
       padding: 2rem;
-      color: #ffd800;
+      color: transparent;
       pointer-events: none;
     }
   }

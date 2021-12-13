@@ -13,9 +13,21 @@ const index = () => {
         <div className="content-with-heading-container">
           <div className={styles.grid_container}>
             <div className="content-with-heading-item">
-              <h2 className="heading">ABOUT US</h2>
+              <h2
+                className="heading"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.1`}
+              >
+                ABOUT US
+              </h2>
 
-              <p className="content">
+              <p
+                className="content"
+                data-animname="fade-in-up"
+                data-onetime="true"
+                data-delay={`.3`}
+              >
                 Live your youth undefeated, make your youth last forever. We
                 don&#39;t let time dictate our lives. We don&#39;t bow down to
                 inclemental circumstances. We refuse to let anything come in our
