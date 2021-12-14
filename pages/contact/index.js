@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Contact from "../../components/Contact";
 import Header from "../../components/Header";
 import swal from "sweetalert";
+import animationObserver from "../../library/animationObserver";
 
 const ContactPage = () => {
   // Rohanjindal666@gmail.com
@@ -66,6 +67,10 @@ const ContactPage = () => {
 
     console.log({ formData });
   };
+
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
 
   return (
     <>

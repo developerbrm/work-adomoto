@@ -4,8 +4,13 @@ import styles from "./our-team.module.scss";
 import Image from "next/image";
 import about from "../../public/images/about.png";
 import Header from "../../components/Header";
+import animationObserver from "../../library/animationObserver";
 
-const index = () => {
+const OurTeam = () => {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <>
       <Header />
@@ -88,4 +93,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default OurTeam;

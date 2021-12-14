@@ -4,8 +4,13 @@ import styles from "./our-culture.module.scss";
 import Image from "next/image";
 import culture from "../../public/images/culture.png";
 import Header from "../../components/Header";
+import animationObserver from "../../library/animationObserver";
 
-const index = () => {
+const OurCulture = () => {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <>
       <Header />
@@ -75,4 +80,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default OurCulture;

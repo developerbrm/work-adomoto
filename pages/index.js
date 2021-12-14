@@ -1,4 +1,5 @@
 import uniqid from "uniqid";
+import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../components/Footer";
@@ -8,8 +9,13 @@ import icon_idea from "../public/images/icon_idea.png";
 import icon_strategy from "../public/images/icon_strategy.png";
 import icon_execution from "../public/images/icon_execution.png";
 import Contact from "../components/Contact";
+import animationObserver from "../library/animationObserver";
 
 export default function Home() {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <div className="page-home">
       <Header />

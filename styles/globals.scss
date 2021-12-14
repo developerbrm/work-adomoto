@@ -44,6 +44,8 @@ a {
     cursor: pointer;
     transition: 0.1s ease;
     color: #fff;
+    display: grid;
+    place-content: center;
 
     &:hover,
     &:focus,

@@ -4,8 +4,13 @@ import Header from "../../components/Header";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import services from "../../public/images/services.png";
+import animationObserver from "../../library/animationObserver";
 
-const services_comp = () => {
+const Services_comp = () => {
+  React.useEffect(() => {
+    animationObserver();
+  }, []);
+
   return (
     <div className={styles.services}>
       <Header />
@@ -17,7 +22,6 @@ const services_comp = () => {
           </div>
 
           <div className={styles.grid_container}>
-          
             <div className={styles.grid_item}>
               <h3 className="heading-color">CREATIVE AND BRAND STRATEGY</h3>
               <p>Brand Identity & Positioning</p>
@@ -61,13 +65,13 @@ const services_comp = () => {
             </div>
 
             <div className={styles.grid_img_item}>
-            <Image
-              className={styles.gird_image}
-              alt="services"
-              src={services}
-              objectFit="contain"
-              // layout="responsive"
-            />
+              <Image
+                className={styles.gird_image}
+                alt="services"
+                src={services}
+                objectFit="contain"
+                // layout="responsive"
+              />
             </div>
           </div>
         </div>
@@ -78,4 +82,4 @@ const services_comp = () => {
   );
 };
 
-export default services_comp;
+export default Services_comp;
