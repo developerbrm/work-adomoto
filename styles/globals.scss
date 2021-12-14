@@ -20,6 +20,7 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #000;
 }
 
 a {
@@ -76,10 +77,14 @@ header {
 
     .logo-container {
       color: #fff;
+      transition: 0.3s ease;
+      max-width: 10rem;
+      filter: invert(1);
 
       .logo {
-        font-size: 2rem;
+        // font-size: 2rem;
         font-weight: bolder;
+        display: block;
       }
     }
 
@@ -96,6 +101,11 @@ header {
       pointer-events: all !important;
       background-color: rgba(0, 0, 0, 0.95) !important;
       padding: 0.5rem 2rem !important;
+
+      .logo-container {
+        max-width: 8rem;
+        filter: invert(1) !important;
+      }
     }
   }
 
@@ -115,6 +125,12 @@ header {
       align-content: center;
       text-align: center;
       color: #fff !important;
+      pointer-events: all !important;
+
+      .logo-container {
+        max-width: 8rem;
+        filter: invert(1);
+      }
 
       .links-container {
         flex-direction: column;
@@ -143,6 +159,10 @@ header {
       padding: 2rem;
       color: transparent;
       pointer-events: none;
+
+      .logo-container {
+        filter: invert(0);
+      }
     }
   }
 }

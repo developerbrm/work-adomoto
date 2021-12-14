@@ -24,6 +24,10 @@
 }
 
 @keyframes fade-in-up {
+  from {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
   to {
     transform: translateY(0rem);
     opacity: 1;

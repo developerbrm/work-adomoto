@@ -65,8 +65,9 @@ const OurTeam = () => {
           {[
             { name: "YASH KUMAR", post: "Co Founder " },
             { name: "KIRTI PAL YADAV", post: "Co Founder " },
-            { name: "HARSH KUMAR", post: "Co Founder " },
-            { name: "MAYANK SOMANI", post: "Co Founder " },
+            { name: "HARSH KUMAR", post: "CFO" },
+            { name: "MAYANK SOMANI", post: "COO" },
+            { name: "ANIL BISHT", post: "Manager" },
           ].map(({ name, post }, index) => (
             <div key={name} className={styles.person_item}>
               <h4

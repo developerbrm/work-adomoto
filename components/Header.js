@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../public/images/logo.png";
 
 const Header = () => {
   const handleHamClick = () => {
@@ -81,8 +82,10 @@ const Header = () => {
                 data-onetime="true"
                 data-delay={`0`}
               >
-                <div>ADO</div>
-                <div>MOTO</div>
+                {/* <div>ADO</div>
+                <div>MOTO</div> */}
+
+                <Image src={logo} alt="adomoto-logo" objectFit="cover" />
               </a>
             </Link>
           </div>

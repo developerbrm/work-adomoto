@@ -16,14 +16,14 @@ const Contact = () => {
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.35`}>
           <a href="mailto:yash@adomoto.com">yash@adomoto.com</a> |{" "}
-          <a href="tel:+919999705223">+91 9999705223</a>
+          <a href="tel:+918527567283">+91 8527567283</a>
         </p>
         <h4 data-animname="fade-in-up" data-onetime="true" data-delay={`.4`}>
           Kriti Pal Yadav (Co-Founder):
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.45`}>
           <a href="mailto:kriti@adomoto.com">kriti@adomoto.com</a> |{" "}
-          <a href="tel:+918883877774">+91 8883877774</a>
+          <a href="tel:+918586878974">+91 8586878974</a>
         </p>
         <h4 data-animname="fade-in-up" data-onetime="true" data-delay={`.5`}>
           HR Enquiry:
@@ -58,7 +58,7 @@ const Contact = () => {
       </Link>
 
       <address data-animname="fade-in-up" data-onetime="true" data-delay={`.6`}>
-        634 Ground floor, West Parmanand, Model Town , Delhi 110009
+        634 l, ground floor west parmanand colony, Gtb nagar, Delhi 110009
       </address>
     </section>
   );

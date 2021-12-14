@@ -27,7 +27,7 @@ export default function Home() {
               { path: "/services", title: "SERVICES" },
               { path: "/about", title: "ABOUT US" },
               { path: "/contact", title: "CONTACT" },
-              { path: "/work", title: "WORK" },
+              { path: "/our-clients", title: "OUR CLIENTS" },
               { path: "/our-team", title: "OUR TEAM" },
               { path: "/our-culture", title: "OUR CULTURE" },
             ].map(({ path = "", title = "" }, index) => (

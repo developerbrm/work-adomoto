@@ -1,0 +1,32 @@
+.our_clients {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  .clients_grid_container {
+    padding: 2rem min(2rem, 5%);
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template: auto / repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #000;
+
+    .client_item {
+      justify-self: center;
+      text-align: center;
+
+      .img_container {
+      }
+
+      p {
+        color: #fff;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+
+    @media (max-width: 800px) {
+      grid-template: auto auto auto/ auto;
+    }
+  }
+}
