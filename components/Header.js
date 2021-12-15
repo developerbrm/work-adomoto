@@ -43,8 +43,7 @@ const Header = () => {
                 an outstanding web presence that compliments your company&#39;s
                 identity."
         />
-        {/* <meta name="description" content="This is Adomoto" /> */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="ham-menu-container">
@@ -82,10 +81,10 @@ const Header = () => {
                 data-onetime="true"
                 data-delay={`0`}
               >
-                {/* <div>ADO</div>
-                <div>MOTO</div> */}
+                <div>ADO</div>
+                <div>MOTO</div>
 
-                <Image src={logo} alt="adomoto-logo" objectFit="cover" />
+                {/* <Image src={logo} alt="adomoto-logo" objectFit="cover" /> */}
               </a>
             </Link>
           </div>

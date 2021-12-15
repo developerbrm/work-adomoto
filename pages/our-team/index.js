@@ -64,7 +64,7 @@ const OurTeam = () => {
         <div className={styles.persons_grid_container}>
           {[
             { name: "YASH KUMAR", post: "Co Founder " },
-            { name: "KIRTI PAL YADAV", post: "Co Founder " },
+            { name: "KIRTI YADAV", post: "Co Founder " },
             { name: "HARSH KUMAR", post: "CFO" },
             { name: "MAYANK SOMANI", post: "COO" },
             { name: "ANIL BISHT", post: "Manager" },

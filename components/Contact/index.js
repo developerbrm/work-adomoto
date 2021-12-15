@@ -19,7 +19,7 @@ const Contact = () => {
           <a href="tel:+918527567283">+91 8527567283</a>
         </p>
         <h4 data-animname="fade-in-up" data-onetime="true" data-delay={`.4`}>
-          Kriti Pal Yadav (Co-Founder):
+          Kriti Yadav (Co-Founder):
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.45`}>
           <a href="mailto:kriti@adomoto.com">kriti@adomoto.com</a> |{" "}
