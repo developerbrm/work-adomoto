@@ -15,21 +15,21 @@ const Contact = () => {
           Yash Kumar (Co-Founder):
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.35`}>
-          <a href="mailto:yash@adomoto.com">yash@adomoto.co</a> |{" "}
+          <a href="mailto:ceo_yash@adomoto.in">ceo_yash@adomoto.in</a> |{" "}
           <a href="tel:+918527567283">+91 8527567283</a>
         </p>
         <h4 data-animname="fade-in-up" data-onetime="true" data-delay={`.4`}>
           Kirti Yadav (Co-Founder):
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.45`}>
-          <a href="mailto:kirti@adomoto.com">kirti@adomoto.co</a> |{" "}
+          <a href="mailto:kirti@adomoto.in">kirti@adomoto.in</a> |{" "}
           <a href="tel:+918586878974">+91 8586878974</a>
         </p>
         <h4 data-animname="fade-in-up" data-onetime="true" data-delay={`.5`}>
           HR Enquiry:
         </h4>
         <p data-animname="fade-in-up" data-onetime="true" data-delay={`.55`}>
-          <a href="mailto:careers@adomoto.com">careers@adomoto.co</a> |{" "}
+          <a href="mailto:ceo_yash@adomoto.in">careers@adomoto.in</a> |{" "}
           {/* <a href="tel:+919750003072">+91 9750003072</a> */}
         </p>
       </div>

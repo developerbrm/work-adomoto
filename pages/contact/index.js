@@ -34,7 +34,7 @@ const ContactPage = () => {
     setIsSendingForm(true);
 
     e.preventDefault();
-    fetch("https://formsubmit.co/ajax/Rohanjindal666@gmail.com", {
+    fetch("https://formsubmit.co/ajax/ceo_yash@adomoto.in", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
